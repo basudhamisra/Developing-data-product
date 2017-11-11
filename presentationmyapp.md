@@ -34,12 +34,20 @@ Input variable Ranges
 My Models
 ========================================================
 
-```{r}
+
+```r
 # Packages Used:
 library(shiny)
 library(ISLR)
 #My data
 dim(Credit)
+```
+
+```
+[1] 400  12
+```
+
+```r
 # My models:
   model1 <- lm(Balance ~ Income,  data = Credit)
   model2 <- lm(Balance ~ Income + Ethnicity + Married + Student, data = Credit)

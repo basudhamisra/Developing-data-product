@@ -789,8 +789,14 @@ hljs.initHighlightingOnLoad();
 <pre><code class="r"># Packages Used:
 library(shiny)
 library(ISLR)
+#My data
+dim(Credit)
+</code></pre>
 
-# My models:
+<pre><code>[1] 400  12
+</code></pre>
+
+<pre><code class="r"># My models:
   model1 &lt;- lm(Balance ~ Income,  data = Credit)
   model2 &lt;- lm(Balance ~ Income + Ethnicity + Married + Student, data = Credit)
 </code></pre>
